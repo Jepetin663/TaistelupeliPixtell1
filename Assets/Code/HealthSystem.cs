@@ -14,40 +14,41 @@ using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+    public int maxHealth_ = 100;
+    public int currentHealth_;
 
     public Text healthText; // Reference to UI text to display health
 
     private void Start()
     {
-        currentHealth = maxHealth;
-        UpdateHealthUI();
+        currentHealth_ = maxHealth_;
+        UpdateHealthUI_();
     }
 
     public void TakeDamage(int damageAmount)
     {
-        currentHealth -= damageAmount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // Ensure health doesn't go below 0 or above maxHealth
-        UpdateHealthUI();
+        currentHealth_ -= damageAmount;
+        currentHealth_ = Mathf.Clamp(currentHealth_, 0, maxHealth_); // Ensure health doesn't go below 0 or above maxHealth
+        UpdateHealthUI_();
 
-        if (currentHealth <= 0)
+        if (currentHealth_ <= 0)
         {
-            Die();
+            Die_();
         }
     }
 
-    void Die()
+    void Die_()
     {
         // Implement what happens when the character dies
         Debug.Log("Player died!");
+        gameObject.SetActive(false);
     }
 
-    void UpdateHealthUI()
+    void UpdateHealthUI_()
     {
         if (healthText != null)
         {
-            healthText.text = "Health: " + currentHealth.ToString();
+            healthText.text = "Health: " + currentHealth_.ToString();
         }
     }
 }
