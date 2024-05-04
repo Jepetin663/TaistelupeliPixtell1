@@ -9,9 +9,9 @@ public class SimpleMovement : MonoBehaviour
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+       
 
-        Vector3 moveDirection = new Vector3(horizontalInput, verticalInput, 0f).normalized;
+        Vector3 moveDirection = new Vector3(horizontalInput, 0f).normalized;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
 }
