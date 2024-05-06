@@ -12,36 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: FighterPlayerData
   m_EditorClassIdentifier: Assembly-CSharp::PlayerData
-  gravityStrength: NaN
-  gravityScale: NaN
-  fallGravityMult: 0
-  maxFallSpeed: 0
-  fastFallGravityMult: 0
-  maxFastFallSpeed: 0
-  runMaxSpeed: 0
-  runAcceleration: 0.01
-  runAccelAmount: NaN
-  runDecceleration: 0.01
-  runDeccelAmount: NaN
-  accelInAir: 0
-  deccelInAir: 0
+  gravityStrength: -72
+  gravityScale: 7.3394494
+  fallGravityMult: 2
+  maxFallSpeed: 30
+  fastFallGravityMult: 1
+  maxFastFallSpeed: 20
+  runMaxSpeed: 16
+  runAcceleration: 16
+  runAccelAmount: 50
+  runDecceleration: 16
+  runDeccelAmount: 50
+  accelInAir: 1
+  deccelInAir: 1
   doConserveMomentum: 1
-  jumpHeight: 0
-  jumpTimeToApex: 0
-  jumpForce: NaN
-  jumpCutGravityMult: 0
-  jumpHangGravityMult: 0
+  jumpHeight: 9
+  jumpTimeToApex: 0.5
+  jumpForce: 36
+  jumpCutGravityMult: 3.5
+  jumpHangGravityMult: 1
   jumpHangTimeThreshold: 0
-  jumpHangAccelerationMult: 0
-  jumpHangMaxSpeedMult: 0
-  wallJumpForce: {x: 0, y: 0}
-  wallJumpRunLerp: 0
-  wallJumpTime: 0
+  jumpHangAccelerationMult: 1
+  jumpHangMaxSpeedMult: 1
+  wallJumpForce: {x: 15, y: 40}
+  wallJumpRunLerp: 0.25
+  wallJumpTime: 0.15
   doTurnOnWallJump: 0
-  slideSpeed: 0
-  slideAccel: 0
-  coyoteTime: 0.01
-  jumpInputBufferTime: 0.01
+  slideSpeed: -12
+  slideAccel: 12
+  coyoteTime: 0.18
+  jumpInputBufferTime: 0.2
   dashAmount: 0
   dashSpeed: 0
   dashSleepTime: 0
