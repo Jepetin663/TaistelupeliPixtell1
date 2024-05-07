@@ -1,5 +1,4 @@
-/*Attach this script to the enemy's weapon or collider. When the weapon collides with a player (assuming the player has a HealthSystem component),
- * it will cause damage to the player's health. Make sure the colliders are set up appropriately and tagged if needed for collision detection.^*/
+/*KV^*/
 
 
 using UnityEngine;
